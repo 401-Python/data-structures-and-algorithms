@@ -6,8 +6,8 @@
 
 ## Table of Contents
 
-#### [Code Challenges]()
-   * [array-reverse]() 
+#### [Code Challenges](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/)
+   * [array-reverse](https://github.com/401-Python/data-structures-and-algorithms/pull/1) 
    * [fifoAnimalStructure]()
    * [multiBracketValidation]()  
    * [fizzBuzzTree]() 
