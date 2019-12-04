@@ -8,6 +8,7 @@
 
 #### [Code Challenges](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/)
    * [array-reverse](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/array_reverse) 
+   * [array-shift](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/array_shift)
    * [fifoAnimalStructure]()
    * [multiBracketValidation]()  
    * [fizzBuzzTree]() 
