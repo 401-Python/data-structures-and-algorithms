@@ -4,6 +4,6 @@ def reverse_array(lst):
   while count >= 0:
     newLst.append(lst[count])
     count -= 1
-  print(newLst)
+  return newLst
 
 reverse_array([4, 3, 2, 1])
