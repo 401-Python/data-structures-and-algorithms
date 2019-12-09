@@ -15,7 +15,7 @@
 
 
 #### [Data Structures](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/data-structures)  
- * [Linked-Lists]()
+ * [Linked-Lists](https://github.com/401-Python/data-structures-and-algorithms/tree/master/linked-list)
   * [ll-merge]()  
   * [Stacks and Queues]()  
   * [trees]()
