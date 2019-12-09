@@ -23,14 +23,14 @@ def test_includes_method():
   assert lst_two.includes('pickles') == True
   assert lst_two.includes('whales') == False
 
-def to_string_method():
+def test_to_string_method():
   lst_three = LinkedList()
   lst_three.insert(3)
   lst_three.insert(4)
   lst_three.insert(5)
 
   actual = lst_three.to_string()
-  expected = [3, 2, 1]
+  expected = [5, 4, 3]
   assert actual == expected
   
 
