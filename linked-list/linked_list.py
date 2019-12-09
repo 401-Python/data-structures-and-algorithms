@@ -49,4 +49,4 @@ ll.insert(node2)
 ll.insert(node3)
 
 print(ll.head)
-ll.to_string()
+print(ll.to_string())
