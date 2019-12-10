@@ -31,7 +31,7 @@ def test_to_string_method():
   lst_three.append(4)
   lst_three.append(5)
 
-  actual = lst_three.to_string()
+  actual = lst_three.__str__()
   expected = 'Node: 1 Node: 2 Node: 3 Node: 4 Node: 5 '
   assert actual == expected
 

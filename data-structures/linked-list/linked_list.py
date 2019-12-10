@@ -36,7 +36,7 @@ class LinkedList:
 
         return False
 
-    def to_string(self):
+    def __str__(self):
         values = ''
         current = self.head
         while current:
