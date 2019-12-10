@@ -1,10 +1,10 @@
 class Node:
-    def __init__(self, val):
-        self.val = val
+    def __init__(self, value):
+        self.value = value
         self.next = None
 
     def __repr__(self):
-        return f'{self.val}'
+        return f'{self.value}'
 
 
 class LinkedList:
@@ -14,33 +14,40 @@ class LinkedList:
 
         self.length = 0
 
-    def insert(self, val):
-        node = Node(val)
+    '''Adds node to head of linked list'''
+
+    def insert(self, value):
+        node = Node(value)
         node.next = self.head
         self.head = node
         self.length += 1
 
-    def includes(self, val):
+    '''Takes in a target value and iterates through Linked List
+    until the value is found, or the end of the list is reached
+    returns a boolean'''
+
+    def includes(self, value):
         current = self.head
-        is_in_list = False
-        while current != None:
-            if current.val == val:
-                is_in_list = True
+
+        while current:
+            if current.value == value:
+                return True
             current = current.next
 
-        return is_in_list
+        return False
 
     def to_string(self):
-        values = []
+        values = ''
         current = self.head
         while current:
-            print(f'Node val: {current.val}')
-            values.append(current.val)
+            values += f'Node: {str(current.value)} '
             current = current.next
         return values
 
-    def append(self, val):
-        new_node = Node(val)
+    '''Iterates to the end of a Linked List and appends a value'''
+
+    def append(self, value):
+        new_node = Node(value)
         if self.head == None:
             self.head = new_node
             return
@@ -51,27 +58,37 @@ class LinkedList:
 
         last.next = new_node
 
-    def insert_before(self, existing_val, new_val):
-        new_node = Node(new_val)
+    '''Takes in an existing val and a val to be inserted
+    iterates until the existing val is found and reassigns
+    pointers to insert the new node before the existing node'''
+
+    def insert_before(self, exisiting_value, new_value):
+        new_node = Node(new_value)
         current = self.head
-        while current.next != None:
-            if current.next.val == existing_val:
+        
+        while current.next:
+            if current.next.value == exisiting_value:
                 new_node.next = current.next
                 current.next = new_node
                 return
             else:
                 current = current.next
 
-    def insert_after(self, existing_node, val):
+    '''Takes in an existing val and a val to be inserted
+    iterates until the existing val is found and reassigns
+    pointers to insert the new node after the existing node'''
 
-        if existing_node is None:
-            print("The input node must be in LinkedList.")
-            return
+    def insert_after(self, existing_value, new_value):
+      new_node = Node(new_value)
+      current = self.head
+      while current:
+        if current.value == existing_value:
 
-        new_node = Node(val)
+          old_node = current.next
+          current.next = new_node
+          new_node.next = old_node
 
-        new_node.next = existing_node.next
-
-        existing_node.next = new_node
-
+          return
+        else:
+          current = current.next
 
