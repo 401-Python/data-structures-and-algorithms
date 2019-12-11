@@ -57,6 +57,7 @@ class LinkedList:
             last = last.next
 
         last.next = new_node
+        self.length +=1
 
     '''Takes in an existing val and a val to be inserted
     iterates until the existing val is found and reassigns
@@ -70,6 +71,7 @@ class LinkedList:
             if current.next.value == exisiting_value:
                 new_node.next = current.next
                 current.next = new_node
+                self.length +=1
                 return
             else:
                 current = current.next
@@ -87,8 +89,27 @@ class LinkedList:
           old_node = current.next
           current.next = new_node
           new_node.next = old_node
-
+          self.length +=1
           return
         else:
           current = current.next
+
+    def kth_from_the_end(self, k):
+      current = self.head
+      count = 0
+
+      while current.next:
+        current = current.next
+        count +=1
+      
+      if k > count:
+        raise Exception('K can not be greater than the lengh of the list')
+      
+      current = self.head
+
+      for i in range(count - k):
+        current = current.next
+      print(current.value)
+      return current.value
+
 

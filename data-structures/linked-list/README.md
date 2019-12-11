@@ -33,7 +33,7 @@
 * python
 
 #### whiteboard
-![LinkedList-WB]()
+![kthfromtheend](assets/kthfromtheend.jpg)
   
 #### Tests
 * How do you run tests?

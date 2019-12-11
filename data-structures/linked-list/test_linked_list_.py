@@ -68,7 +68,16 @@ def test_insert_after():
   assert lst_six.head.next.next.next.next.next.value == 6
 
 
-  
+def test_kth_method():
+  lst_seven = LinkedList()
+  lst_seven.insert(1)
+  lst_seven.append(2)
+  lst_seven.append(3)
+  lst_seven.append(4)
+  lst_seven.append(5)
+
+  assert lst_seven.kth_from_the_end(2) == 3
+  assert lst_seven.kth_from_the_end(0) == 5
 
 
 
