@@ -118,18 +118,15 @@ class LinkedList:
         current_a = self.head
         current_b = linkedlist_.head
 
-        # While there are available positions in p;
         while current_a and current_b:
 
-            # Save next pointers
             a_next = current_a.next
             b_next = current_b.next
 
-            # make q_curr as next of p_curr
-            current_b.next = a_next  # change next pointer of q_curr
-            current_a.next = current_b  # change next pointer of p_curr
+           
+            current_b.next = a_next 
+            current_a.next = current_b  
 
-            # update current pointers for next iteration
             current_a = a_next
             current_b = b_next
         linkedlist_.head = current_b
