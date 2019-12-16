@@ -115,8 +115,8 @@ class LinkedList:
         return current.value
 
     def merge(self, linkedlist_):
-        current_a = self.head
-        current_b = linkedlist_.head
+        current_b = self.head
+        current_a = linkedlist_.head
 
         while current_a and current_b:
 
