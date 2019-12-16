@@ -68,16 +68,16 @@ def test_dequeue():
   assert q.length == 2
   assert q.front == 2
 
-# def test_enqueue_empty_queue():
-#   q = Queue()
-#   q.enqueue(1)
-#   q.enqueue(2)
-#   q.enqueue(3)
-#   q.dequeue()
-#   q.dequeue()
-#   q.dequeue()
+def test_enqueue_empty_queue():
+  q = Queue()
+  q.enqueue(1)
+  q.enqueue(2)
+  q.enqueue(3)
+  q.dequeue()
+  q.dequeue()
+  q.dequeue()
 
-#   assert q.length == 0
+  assert q.length == 0
 
 def test_instantiate_empty():
   q = Queue()
@@ -91,6 +91,6 @@ def test_q_peek():
   q.enqueue(1)
   q.enqueue(2)
   q.enqueue(3) 
-  
+
   assert q.peek() == 1
 
