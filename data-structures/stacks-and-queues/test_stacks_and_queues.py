@@ -1,5 +1,9 @@
 from stacks_and_queues import Node, Stack, Queue
 
+def test_empty_stack():
+  test_stack = Stack()
+  assert isinstance(test_stack, Stack)
+
 def test_push():
   test_stack = Stack()
   test_stack.push(1)
