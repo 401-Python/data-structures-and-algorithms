@@ -6,17 +6,16 @@
 
 ## Table of Contents
 
-#### [Code Challenges]()
-   * [array-reverse]() 
-   * [fifoAnimalStructure]()
-   * [multiBracketValidation]()  
-   * [fizzBuzzTree]() 
-   * [repeatedWord]()
+#### [Code Challenges](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/)
+   * [array-reverse](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/array_reverse) 
+   * [array-shift](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/array_shift)
+   * [array_binary_search](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/array_binary_search)
 
 
 
-#### [Data Structures](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/data-structures)  
- * [Linked-Lists]()
+
+#### [Data Structures](https://github.com/401-Python/data-structures-and-algorithms/tree/master/data-structures/)  
+ * [Linked-Lists](https://github.com/401-Python/data-structures-and-algorithms/tree/master/data-structures/linked-list)
   * [ll-merge]()  
   * [Stacks and Queues]()  
   * [trees]()

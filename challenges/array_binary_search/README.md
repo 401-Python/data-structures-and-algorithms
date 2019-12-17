@@ -1,5 +1,5 @@
 # Array Binary Search
-[PR]()  
+[PR](https://github.com/401-Python/data-structures-and-algorithms/pull/4)  
 [![Build Status]()
 
 ## Feature Tasks
