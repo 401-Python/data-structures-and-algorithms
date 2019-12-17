@@ -1,5 +1,9 @@
 from stacks_and_queues import Node, Stack, Queue
 
+def test_empty_stack():
+  test_stack = Stack()
+  assert isinstance(test_stack, Stack)
+
 def test_push():
   test_stack = Stack()
   test_stack.push(1)
@@ -48,7 +52,7 @@ def test_enqueue():
   q.enqueue(2)
   q.enqueue(3)
 
-  assert q.front == 1
+  assert q.front.value == 1
 
 def test_enqueue_multiple():
   q = Queue()
@@ -66,7 +70,7 @@ def test_dequeue():
   q.dequeue()
 
   assert q.length == 2
-  assert q.front == 2
+  assert q.front.value == 2
 
 def test_enqueue_empty_queue():
   q = Queue()
