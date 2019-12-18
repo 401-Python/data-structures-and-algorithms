@@ -114,35 +114,21 @@ class LinkedList:
         print(current.value)
         return current.value
 
-    def merge(self, linkedlist_):
-        current_b = self.head
-        current_a = linkedlist_.head
+   
+def merge(list_a, list_b):
+    current_b = list_a.head
+    current_a = list_b.head
 
-        while current_a and current_b:
+    while current_a and current_b:
 
-            a_next = current_a.next
-            b_next = current_b.next
+        a_next = current_a.next
+        b_next = current_b.next
 
-           
-            current_b.next = a_next 
-            current_a.next = current_b  
+        
+        current_b.next = a_next 
+        current_a.next = current_b  
 
-            current_a = a_next
-            current_b = b_next
-        linkedlist_.head = current_b
+        current_a = a_next
+        current_b = b_next
+    list_b.head = current_b
 
-
-ll = LinkedList()
-ll.insert(1)
-ll.append(3)
-ll.append(5)
-ll.append(7)
-
-ll2 = LinkedList()
-ll.insert(2)
-ll.append(4)
-ll.append(6)
-ll.append(8)
-
-ll.merge(ll2)
-ll.__str__()
