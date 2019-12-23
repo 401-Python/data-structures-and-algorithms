@@ -94,7 +94,15 @@ class Queue:
         '''returns the first value in a queue'''
         return self.front.value
 
+class Dog():
+  def __init__(self):
+    self.name = "Dog"
+  
 
+class Cat():
+  def __init__(self):
+    self.name = "Cat"
+    
 class FifoAnimalShelter(Queue):
   def __init__(self):
     self.front = None
