@@ -20,7 +20,7 @@
  * [Linked-Lists](https://github.com/401-Python/data-structures-and-algorithms/tree/master/data-structures/linked-list)
   * [ll-merge]()  
   * [Stacks and Queues]()  
-  * [trees]()
+  * [trees](https://github.com/401-Python/data-structures-and-algorithms/tree/master/data_structures/tree)
  
   
   
