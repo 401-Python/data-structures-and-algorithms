@@ -53,19 +53,27 @@ class BinaryTree:
 
 class BinarySearchTree(BinaryTree):
 
-  def add(self, value):
+  def add(self, value, root=None):
+    root = root or self.root
+
     node = Node(value)
+
     if not self.root:
       self.root = node
       return
     
-    if value < self.root.value:
-      if not self.root.left:
-        self.root.left = node
+    if value < root.value:
+      if root.left:
+        self.add(value, root.left)
+      else:
+        root.left = node
     else:
-      if not self.root.right:
-        self.root.right = node
-        
+      if root.right:
+        self.add(value, root.left)
+      else:
+       root.right = node
+    
+
   def contains(self, value, current=None):
       current = current or self.root
       if not self.root or value == None:
@@ -84,6 +92,6 @@ tree.add(20)
 tree.add(15)
 tree.add(10)
 
-# print(tree.post_order())
+print(tree.post_order())
 print(tree.in_order())
 print(tree.pre_order())
