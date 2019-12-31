@@ -68,7 +68,7 @@ class BinarySearchTree(BinaryTree):
 
     if not self.root:
       self.root = node
-      return
+      return 
     
     if value < root.value:
       if root.left:
@@ -100,29 +100,37 @@ class BinarySearchTree(BinaryTree):
       print('no')
       return False
 
-def fizz_buzz_tree(node):
-  if (node.value % 3 == 0 & node.value % 5 == 0):
-    node.value = 'FizzBuzz'
-  elif node.value % 3 == 0:
-    node.value = 'Fizz'
-  elif node.value % 5 == 0:
-    node.value = 'Buzz'
+
+def fizz_buzz_tree(tree):
+  '''Appliies fizz buzz transformation to a
+  Binary Tree of integers'''
+
+  def fizz_it(num):
+    new_val = None
+
+    if num % 3 == 0:
+      new_val = 'Fizz'
+    if num % 5 == 0:
+      new_val = 'Buzz'
+    if num % 3 == 0 and num % 5 == 0:
+      new_val = 'FizzBuzz'
+    
+    return new_val or str(num)
   
-  fizz_buzz_tree(node.left)
-  fizz_buzz_tree(node.right)
-  print(node)
-  return node
+  def traverse(root):
+    if not root:
+      return None
+    
+    fizzed = fizz_it(root.value)
+    
+    new_node = Node(fizzed)
 
+    new_node.left = traverse(root.left)
 
-if __name__ == "__main__":
-  tree = BinarySearchTree()
-  tree.add(20)
-  tree.add(15)
-  tree.add(10)
+    new_node.right = traverse(root.right)
 
-
-  # print(tree.post_order())
-  # print(tree.in_order())
-  # print(tree.pre_order())
-
-  # tree.contains(11)
+    return new_node
+  
+  fizz_tree = BinaryTree()
+  fizz_tree.root = traverse(tree.root)
+  return fizz_tree
