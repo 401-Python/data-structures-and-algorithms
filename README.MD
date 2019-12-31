@@ -12,6 +12,8 @@
    * [array_binary_search](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/array_binary_search)
    * [queue_with_stacks](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/queue_with_stacks)
    * [fifo-animal-shelter](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/fifo_animal_shelter)
+   * [fizz_buzz_tree](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/fizz_buzz_tree)
+   * [breadth-first-traversal](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/breadth_first)
 
 
 
