@@ -57,6 +57,23 @@ class BinaryTree:
         results.append(node.value)
 
       return results
+    
+    def find_max_val(self, root):
+      if not root:
+        return None
+      
+      max_val = root.value
+      left_val = self.find_max_val(root.left)
+      right_val = self.find_max_val(root.right)
+
+      if root.left:
+        if left_val > max_val:
+          max_val = left_val
+      if root.right:
+        if right_val > max_val:
+          max_val = right_val
+      
+      return max_val
 
 
 class BinarySearchTree(BinaryTree):
@@ -100,22 +117,7 @@ class BinarySearchTree(BinaryTree):
       print('no')
       return False
 
-  def find_max_val(self, root):
-    if not root:
-      return None
-    
-    max_val = root.value
-    left_val = self.find_max_val(root.left)
-    right_val = self.find_max_val(root.right)
-
-    if root.left:
-      if left_val > max_val:
-        max_val = left_val
-    if root.right:
-      if right_val > max_val:
-        max_val = right_val
-    
-    return max_val
+  
 
 
 if __name__ == "__main__":
