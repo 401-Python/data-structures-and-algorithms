@@ -14,6 +14,7 @@
    * [fifo-animal-shelter](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/fifo_animal_shelter)
    * [fizz_buzz_tree](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/fizz_buzz_tree)
    * [breadth-first-traversal](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/breadth_first)
+   * [find-max-value](https://github.com/401-Python/data-structures-and-algorithms/blob/master/data_structures/tree/tree.py)
 
 
 
