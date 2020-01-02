@@ -57,6 +57,23 @@ class BinaryTree:
         results.append(node.value)
 
       return results
+    
+    def find_max_val(self, root):
+      if not root:
+        return None
+      
+      max_val = root.value
+      left_val = self.find_max_val(root.left)
+      right_val = self.find_max_val(root.right)
+
+      if root.left:
+        if left_val > max_val:
+          max_val = left_val
+      if root.right:
+        if right_val > max_val:
+          max_val = right_val
+      
+      return max_val
 
 
 class BinarySearchTree(BinaryTree):
@@ -100,29 +117,16 @@ class BinarySearchTree(BinaryTree):
       print('no')
       return False
 
-def fizz_buzz_tree(node):
-  if (node.value % 3 == 0 & node.value % 5 == 0):
-    node.value = 'FizzBuzz'
-  elif node.value % 3 == 0:
-    node.value = 'Fizz'
-  elif node.value % 5 == 0:
-    node.value = 'Buzz'
   
-  fizz_buzz_tree(node.left)
-  fizz_buzz_tree(node.right)
-  print(node)
-  return node
 
 
 if __name__ == "__main__":
   tree = BinarySearchTree()
-  tree.add(20)
-  tree.add(15)
-  tree.add(10)
+  tree.root = Node(5)
+  tree.root.left = Node(19)
+  tree.root.right = Node(7)
+  tree.root.left.left = Node(23)
+  tree.root.left.right = Node(8)
 
+  print(tree.find_max_val(tree.root))
 
-  # print(tree.post_order())
-  # print(tree.in_order())
-  # print(tree.pre_order())
-
-  # tree.contains(11)
