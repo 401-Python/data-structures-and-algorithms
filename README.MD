@@ -27,8 +27,8 @@
  
   
   
- #### [Sorts](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/sorts) 
- * [insertion sort]() 
+ #### [Sorts](https://github.com/401-Python/data-structures-and-algorithms/tree/master/sorts) 
+ * [insertion sort](https://github.com/401-Python/data-structures-and-algorithms/tree/master/sorts/insertion_sort) 
  * [merge sort]()
  * [quick sort]()
  
