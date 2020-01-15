@@ -29,7 +29,7 @@
   
  #### [Sorts](https://github.com/401-Python/data-structures-and-algorithms/tree/master/sorts) 
  * [insertion sort](https://github.com/401-Python/data-structures-and-algorithms/tree/master/sorts/insertion_sort) 
- * [merge sort]()
+ * [merge sort](https://github.com/401-Python/data-structures-and-algorithms/tree/merge-sort/sorts/merge_sort)
  * [quick sort]()
  
  ### [Hash Tables](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/hashtables)
