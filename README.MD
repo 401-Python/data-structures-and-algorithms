@@ -30,7 +30,7 @@
  #### [Sorts](https://github.com/401-Python/data-structures-and-algorithms/tree/master/sorts) 
  * [insertion sort](https://github.com/401-Python/data-structures-and-algorithms/tree/master/sorts/insertion_sort) 
  * [merge sort](https://github.com/401-Python/data-structures-and-algorithms/tree/merge-sort/sorts/merge_sort)
- * [quick sort]()
+ * [quick sort](https://github.com/401-Python/data-structures-and-algorithms/tree/master/sorts/quick_sort)
  
  ### [Hash Tables](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/hashtables)
 
@@ -38,5 +38,4 @@
   
 #### Tests
 * How do you run tests?
-  * `npm test`
-  * `npm run lint`
+    pytest
