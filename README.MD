@@ -32,10 +32,10 @@
  * [merge sort](https://github.com/401-Python/data-structures-and-algorithms/tree/merge-sort/sorts/merge_sort)
  * [quick sort](https://github.com/401-Python/data-structures-and-algorithms/tree/master/sorts/quick_sort)
  
- ### [Hash Tables](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/hashtables)
+ ### [Hash Tables](https://github.com/401-Python/data-structures-and-algorithms/tree/master/data_structures/hash_tables)
 
 
   
 #### Tests
-* How do you run tests?
+* How do you run tests?  
     pytest
