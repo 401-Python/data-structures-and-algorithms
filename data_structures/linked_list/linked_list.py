@@ -61,6 +61,22 @@ class LinkedList:
         last.next = new_node
         self.length += 1
 
+    def find(self, value):
+
+        if self.head == None:
+            return None
+
+        currentNode = self.head
+
+        while not currentNode == None:
+
+            if currentNode.value == value:
+                return currentNode
+
+            currentNode = currentNode.next
+
+        return None
+
     '''Takes in an existing val and a val to be inserted
     iterates until the existing val is found and reassigns
     pointers to insert the new node before the existing node'''
@@ -114,7 +130,7 @@ class LinkedList:
         print(current.value)
         return current.value
 
-   
+
 def merge(list_a, list_b):
     current_b = list_a.head
     current_a = list_b.head
@@ -124,11 +140,9 @@ def merge(list_a, list_b):
         a_next = current_a.next
         b_next = current_b.next
 
-        
-        current_b.next = a_next 
-        current_a.next = current_b  
+        current_b.next = a_next
+        current_a.next = current_b
 
         current_a = a_next
         current_b = b_next
     list_b.head = current_b
-
