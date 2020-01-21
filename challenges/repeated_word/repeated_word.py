@@ -82,9 +82,9 @@ defaultHashTableSize = 32
 
 class HashTable:
 
-    def __init__(self, hashTableSize = defaultHashTableSize):
+    def __init__(self, HashTableSize = defaultHashTableSize):
         
-        self.buckets = [LinkedList() for x in range(0, hashTableSize)]
+        self.buckets = [LinkedList() for x in range(0, HashTableSize)]
 
         self.keys = {}
 
@@ -135,13 +135,25 @@ class HashTable:
  
     def contains(self, key):
         if key in self.keys.keys():
-            print('key present')
             return True
         else:
-            print('key not found')
             return False
 
+
+def repeated_word(long_str):
+
+  ht =  HashTable()
+  arr = long_str.replace(',', '').replace('.', '').split()
+
+  for word in arr:
+    print(word)
+    if ht.contains(word):
+      print(word)
+      return word
+    else:
+      ht.add(word, 1)
+  
+  return None
 if __name__ == "__main__":
-    ht = HashTable()
-    ht.add('testing', 72)
-    ht.contains('testing')
+  summer = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York"
+  repeated_word(summer)
