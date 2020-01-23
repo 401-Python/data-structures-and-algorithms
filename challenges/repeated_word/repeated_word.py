@@ -143,7 +143,7 @@ class HashTable:
 def repeated_word(long_str):
 
   ht =  HashTable()
-  arr = long_str.replace(',', '').replace('.', '').split()
+  arr = long_str.replace(',', '').replace('.', '').lower().split()
 
   for word in arr:
     print(word)
