@@ -15,6 +15,7 @@ def left_join(map_a, map_b):
     if map_b.__contains__(word):
        antonym = map_b.get(word)
        synonym = map_a[word]
+       print(map_a[word] + 'test')
        output.append([word, synonym, antonym])
   
   print(output)
