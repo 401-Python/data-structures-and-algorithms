@@ -1,3 +1,5 @@
+import collections
+
 class Graph:
 
     def __init__(self):
@@ -43,8 +45,28 @@ class Graph:
 
     def get_neighbors(self, vertex):
         return self._adjacency_list[vertex]
-
+    
 
 class Vertex:
     def __init__(self, value):
         self.value = value
+
+
+
+
+
+
+
+g = Graph()
+one = g.add_node('1')
+two = g.add_node('2')
+three = g.add_node('3')
+four = g.add_node('4')
+five = g.add_node('5')
+
+g.add_edge(one, two, 12)
+g.add_edge(two, three, 23)
+g.add_edge(three, four, 34)
+g.add_edge(four, five, 45)
+g.add_edge(five, one, 51)
+
