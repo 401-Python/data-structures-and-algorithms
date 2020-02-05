@@ -18,6 +18,7 @@
    * [repeated_word](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/repeated_word)
    * [left_join](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/left_join)
    * [bfs_grapth](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/breadth_first_graph)
+   * [dfs_graph](https://github.com/401-Python/data-structures-and-algorithms/tree/master/challenges/depth_first_graph)
   
 
 
